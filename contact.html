@@ -17,13 +17,71 @@ Revision:
 	
 		<nav>
 		<hr />
-		<p> <a href="home.html">Home</a> <a href="menu">Menu</a>
+		<p> <a href="home.html">Home</a> <a href="menu.html">Menu</a>
 		<a href="contact.html">Contact Us</a></p>
 		<hr />
 		</nav>
 		
-		<p> form goes here </p>
+		<form action="submit1.html" method="POST">
+			<label for="name"></label> <br />
+			Name: <input type="text" id="name" name="name">
+			<br />
+			
+			<label for="email"></label> <br />
+			Email: <input type="text" id="email" name="email">
+			<br />
+			
+			<label for="phone"></label> <br />
+			Phone: <input type="text" id="phone" name="phone"><br />
+			<br />
 		
+			
+			<label for="reason">Reason for Inquiry:</label>
+			<select id="reason" name="reason">
+				<option value="Catering" selected> Catering </option>
+				<option value="reserve"> Reserve a Table</option>
+				<option value="party"> Party Options </option>
+				<option value="promos"> Promos </option> <br />
+			</select>
+			<br />
+			<br />
+			
+			<label for="info"> Additional Information: </label>
+			<textarea name="info"> </textarea>
+			<br />
+			<br />
+			Have you been to the restaurant?
+			<input type="radio" id="choice1" name="question" value="no">
+			<label for="choice1"> No </label>
+			
+			<input type="radio" id="choice2" name="question" value="yes">
+			<label for="choice2"> Yes </label>
+			<br />
+			<br />
+			
+			Best days to contact you:
+			
+			<input type="checkbox" id="mon" name="contactDays" value="mon">
+			<label for="mon"> Mon </label>
+			
+			<input type="checkbox" id="tue" name="contactDays" value="tue">
+			<label for="tue"> Tue </label>
+			
+			<input type="checkbox" id="wed" name="contactDays" value="wed">
+			<label for="wed"> Wed </label>
+			
+			<input type="checkbox" id="thur" name="contactDays" value="thur">
+			<label for="thur"> Thur </label>
+			
+			<input type="checkbox" id="fri" name="contactDays" value="fri">
+			<label for="fri"> Fri </label>
+			<br />
+			<br />
+			<input type="submit" value="Send Request">
+			
+			
+			
+			
 	
 	
 	
