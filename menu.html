@@ -7,30 +7,96 @@ Revision:
 
 <html>
 	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1 
+			shrink-to-fit=no">
 		<title> Menu </title>
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		
+		<link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css" />
+		<style>
+			body{
+				background-color: #B3D0EF;
+			}
+			table {
+				width: 100%;
+			}
+			
+			th {
+				padding: 20px;
+				font-size: 25px;
+				color: #1E405C;
+				text-align: center;
+				
+			}
+			
+			tbody, td {
+				padding: 12px;
+				text-align: center;
+			}
+			
+			h2{
+				font-weight: bold;
+				color: #1E405C;
+				text-align: center;
+			}
+			
+			#drinks, th {
+				font-weight: bold;
+		
+			
+			}
+			#drinks,th, td{
+				padding: 10px;
+				text-align: left;
+			}
+			
+			.beverages:nth-child(odd){
+			
+				background-color: #1E405C;
+				color: #799DBB;
+			
+			}
+		
+		
+		</style>
+		
+		
+		
+		
 	</head>
 	
 	<body>
 		<header>
-			<h1>Grandslam's Burger Grill<h1> 
+			<h1 style="font-family: comic sans ms;">Grandslam's Burger Grill<h1> 
 		</header>
 		
+		
+		
 	<nav>
-	<hr />
-	<p> <a href="home.html">Home</a> <a href="menu.html">Menu</a>
-	<a href="contact.html">Contact Us</a> </p>
-	<hr />
+	
+	
+	<p> <a class="btn" href="home.html">Home</a> <a class="btn" href="menu.html">Menu</a>
+	<a class="btn" href="contact.html">Contact Us</a> </p>
+	
 	</nav>
+	<h2> MENU ITEMS: </h2>
+	
 	<section>
 	<article id="menuItems">
 	<table>
-		<caption> <strong>MENU ITEMS:</strong> </caption>
-		<tr>
-			<th style="color: red"> Grandslam special</th>
-			<th style="color: red"> Dinger Dog special</th>
-			<th style="color: red"> Nacho cheese fries</th>
-		</tr>
 		
+		<thead>
+		<tr>
+			<th > Grandslam special</th>
+			<th> Dinger Dog special</th>
+			<th> Nacho cheese fries</th>
+		</tr>
+		</thead>
+		
+		<tbody>
 		<tr>
 			<td> Huge quarter pound burger.<br />
 			Loaded with toppings of your choice<br />
@@ -49,9 +115,9 @@ Revision:
 		<br />
 		<br />
 		<tr>
-			<th style="color: red">6 or 8 oz Steak </th>
-			<th style="color: red">Grilled Chicken</th>
-			<th style="color: red">Sides </th>
+			<th>6 or 8 oz Steak </th>
+			<th>Grilled Chicken</th>
+			<th>Sides </th>
 		</tr>
 	
 	    <tr> 
@@ -67,8 +133,48 @@ Revision:
 			<td> Sides inclued Fries,Loaded Potatos,macoroni and cheese, <br />
 			Green beans, peas or Corn on the cob.</td>
 		</tr>
+		</tbody>
 	</table>
 	</article>
+	
+	<article>
+	<table id="drinks">
+	<thead >
+		<tr>
+			<th> Beverages: </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="beverages">
+			<td> Root Beer </td>
+			<td> $3.00 </td>
+		</tr>
+		
+		<tr class="beverages">
+			<td> Bottled Water </td>
+			<td> $1.25 </td>
+		</tr>
+		
+		<tr class="beverages">
+			<td> Lemonade </td>
+			<td> $1.00 </td>
+		</tr>
+		
+		<tr class="beverages">
+			<td> Iced Tea </td>
+			<td> $1.25 </td>
+		</tr>
+	</tbody>	
+		
+		
+		
+	</table>
+		
+	
+	
+	
+	</article>
+	
 	</section>	
 	
 	<footer>
@@ -76,6 +182,10 @@ Revision:
 		<p> Address: 300 Homerun way, Homeville, Ky. 12345 </p>
 		<p> Phone: (222)123-4321</p>
 	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
 	
 	</body>
 

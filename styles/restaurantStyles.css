@@ -1,0 +1,33 @@
+
+header,footer{
+				background-color: #1E405C;
+				color: #799DBB;
+				width: 100%;
+				height: 100px;
+				text-align: center;
+				padding-top:30px;
+				padding-bottom: 30px;
+	}
+	
+nav{
+	
+	border-top: thin #5b7d87 solid;
+	border-bottom: thin #5b7d87 solid;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+	
+	
+}
+
+
+nav .btn{
+	background-color: #1E405C;
+	color: #799DBB;
+	
+}
+
+nav .btn:hover{
+	font-weight: bold;
+	
+}

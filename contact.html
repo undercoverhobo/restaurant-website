@@ -7,36 +7,113 @@ Revision:
 
 <html>
 	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1 
+			shrink-to-fit=no">
 		<title> Contact Us </title>
+		
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		
+		<link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css" />
+		
+		<style>
+			body{ 
+			
+				background-color: #B3D0EF;  
+			
+			}
+			
+			label, fieldset{
+				font-size: 1.2em;
+				
+			}
+			
+			input[type=text] {
+				width: 50%;
+				padding: 8px 8px;
+				margin: 12px 0;
+				font-size: 1.2em;
+				box-sizing: border-box;
+			}
+			
+			select, textarea {
+				margin: 20px 0;
+				font-size: 1em;
+			}
+			
+			textarea{
+				width: 50%;
+				height: 200px;
+				padding: 12px 20px;
+				margin: 12px 0;
+				box-sizing: border-box;
+				border: 2px solid;
+				border-radius: 3px;
+				resize: none;
+			}
+			
+			input[type=submit] {
+				background-color: #122F47;
+				border: none;
+				color: 799DBB;
+				padding: 15px;
+				text-decoration: none;
+			
+				
+			}
+			
+			input[type=submit]:hover {
+				
+				font-weight: bold;
+				text-decoration: underline;
+				color: white;
+		
+			}
+			
+			label.required{
+				
+				font-weight: bold;
+				required;
+			
+			}
+				
+		
+		
+		</style>
+		
+		
 	</head>
 	
 	<body>
 		<header>
-			<h1> Grandslam's Burger Grill</h1>
+			<h1 style="font-family: comic sans ms;"> Grandslam's Burger Grill</h1>
 		</header>
 	
 		<nav>
 		<hr />
-		<p> <a href="home.html">Home</a> <a href="menu.html">Menu</a>
-		<a href="contact.html">Contact Us</a></p>
+		<p> <a class="btn" href="home.html">Home</a> <a class="btn" href="menu.html">Menu</a>
+		<a class="btn" href="contact.html">Contact Us</a></p>
 		<hr />
 		</nav>
 		
 		<form action="submit1.html" method="POST">
-			<label for="name"></label> <br />
-			Name: <input type="text" id="name" name="name">
+			<label class="required" for="name"> Name:</label> <br />
+			<input type="text" id="name" name="name" class="required" required placeholder="Your name..">
 			<br />
 			
-			<label for="email"></label> <br />
-			Email: <input type="text" id="email" name="email">
+			<label class="required" for="email">Email: </label> <br />
+			<input type="text" id="email" name="email" class="required" required placeholder="Email..">
 			<br />
 			
-			<label for="phone"></label> <br />
-			Phone: <input type="text" id="phone" name="phone"><br />
+			<label class="required" for="phone">Phone:</label> <br />
+			<input type="text" id="phone" name="phone" class="required" required placeholder="Phone number.."> 
+			<br />
 			<br />
 		
 			
-			<label for="reason">Reason for Inquiry:</label>
+			<label for="reason">Reason for Inquiry:</label> <br />
 			<select id="reason" name="reason">
 				<option value="Catering" selected> Catering </option>
 				<option value="reserve"> Reserve a Table</option>
@@ -46,13 +123,15 @@ Revision:
 			<br />
 			<br />
 			
-			<label for="info"> Additional Information: </label>
-			<textarea name="info"> </textarea>
+			<label for="info"> Additional Information: </label> <br />
+			<textarea name="info"> Additional Information.. </textarea>
 			<br />
 			<br />
 			Have you been to the restaurant?
+			<br />
 			<input type="radio" id="choice1" name="question" value="no">
-			<label for="choice1"> No </label>
+			<label for="choice1"> No </label> 
+			<br />
 			
 			<input type="radio" id="choice2" name="question" value="yes">
 			<label for="choice2"> Yes </label>
@@ -60,18 +139,23 @@ Revision:
 			<br />
 			
 			Best days to contact you:
+			<br />
 			
 			<input type="checkbox" id="mon" name="contactDays" value="mon">
 			<label for="mon"> Mon </label>
+			<br />
 			
 			<input type="checkbox" id="tue" name="contactDays" value="tue">
 			<label for="tue"> Tue </label>
+			<br />
 			
 			<input type="checkbox" id="wed" name="contactDays" value="wed">
 			<label for="wed"> Wed </label>
+			<br />
 			
 			<input type="checkbox" id="thur" name="contactDays" value="thur">
 			<label for="thur"> Thur </label>
+			<br />
 			
 			<input type="checkbox" id="fri" name="contactDays" value="fri">
 			<label for="fri"> Fri </label>
@@ -92,7 +176,9 @@ Revision:
 	<p> Phone: (222)123-4321</p>
 	
 	</footer>
-	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	</body>
 
 </html>
