@@ -1,76 +1,129 @@
 <DOCTYPE html>
-<!-- 
+<!--
 Name: Eric Denney
 Date: 4-22-19
 Revision:
 -->
 
+<!-- Carousel CSS code -->
+<style>
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+}
+
+</style>
+
 <html lang="en">
 	<head>
+
 			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1 
+			<meta name="viewport" content="width=device-width, initial-scale=1
 			shrink-to-fit=no">
+			<!-- font libary for icons -->
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 		<title> Homepage </title>
-		
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+<!-- bootstrap cdn links -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		
+<!-- external css styles -->
 		<link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css" />
-		
-		
 	</head>
-	
+
 	<body>
 		<header>
-			<h1 style="font-family: comic sans ms;"> Grandslam's Burger Grill</h1>
-			
-		<style>
-			body{ 
-			
-				background-color: #B3D0EF;  
-			
-			}
-			
-			
-			
-		
-		
-		
-		</style>
+			<h1 style="font-family: comic sans ms;"><i class='fas fa-star' style='font-size:48px;color:red'></i>Grandslam's Burger Grill<i class='fas fa-star' style='font-size:48px;color:red'></i></h1>
+
 		</header>
-		
+
 		<nav>
-		
-		<p> <a class="btn" href="home.html">Home</a> <a class="btn" href="menu.html">Menu</a>  
-		<a class="btn" href="contact.html">Contact Us</a></p>
-		
+
+
+	  <div class="btn"><a href="home.html"> <i class="fa fa-home fa-lg" style="color: white; padding: 10px;"></i></a></div>
+		<a class="btn" href="menu.html">Menu</a>
+		<a class="btn" href="contact.html">Contact Us</a>
+
 		</nav>
-		
-		<img class="displayed" style="padding: 8px; border: thick #1E405C solid; margin: 16px;"  src="images/baseballcrop.jpg" alt="baseball"/ style width: "400px;">
-		
+		<br>
+
+
+<noscript> <h4 style="color: red">JavaScript is off. Please enable to view full site. <h4></noscript>
+
+
+		<!-- carousel start -->
+		<div class="container">
+		  <div class="w-75 h-75">
+		    <div class="carousel slide" id="carouselExample" data-ride="carousel">
+						<ol class="carousel-indicators">
+								<li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExample" data-slide-to="1"></li>
+								<li data-target="#carouselExample" data-slide-to="2"></li>
+						</ol>
+		      <div class="carousel-inner">
+		        <div class="carousel-item active">
+		          <img src="C:\Users\Taylor Denney\Desktop\REPO\restaurant-website\images\flagBaseball.jpg" alt="first slide" class="d-block w-100 h-50">
+		          <div caption class="carousel-caption d-non d-md-block">
+		              <h1 style="color: blue;"> We're opening a new location! </h1>
+		          </div>
+		        </div>
+		        <div class="carousel-item">
+		            <img src="C:\Users\Taylor Denney\Desktop\REPO\restaurant-website\images\newMenu.jpg" alt="secound slide" class="d-block w-100 h-50">
+		            <div caption class="carousel-caption d-non d-md-block">
+		                <h4 style="color: blue;"> We're rolling out our seasonal menu, with special options for this season.</h4>
+		            </div>
+		        </div>
+		        <div class="carousel-item">
+		            <img src="C:\Users\Taylor Denney\Desktop\REPO\restaurant-website\images\drinkOfTheMonth.jpg" alt="second slide" class="d-block w-100 h-50">
+		            <div class="carousel-caption d-non d-md-block">
+		              <h2 style="color: blue;">The Drink of the Month is SG Special Brew.</h2>
+		            </div>
+		        </div>
+		      </div>
+					<a href=#carouselExample class="carousel-control-prev" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only"> previous</span>
+					</a>
+					<a href="#carouselExample" class="carousel-control-next" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"> </span>
+							<span class="sr-only"> Next </span>
+					</a>
+		    </div>
+		  </div>
+		</div>
+		<!--carousel end-->
+
+<!-- general info -->
 		<section>
 		<article id="restaurant_description">
-			<p><h2> Restaurant Description: </h2></p>
-			<p> Grandslam's Burger Grill is <strong>guaranteed</strong> to hit a grandslam on your taste buds.</p>
-			<p> We serve 100% all beef Hamburgers and hotdogs from local farms.</p>
-			<p> We choose to go local so our meat is never frozen so we can use the best ingredients.</p>
-			<p> Grandslam's has a <strong> HUGE</strong> bar area with tons of tv's to watch all your<br />
-			favorite sports teams taste victory!</p>
-			<p> Grandslam loves local leauges bring your kids in after a game in uniform to get<br />
-			a 100% <strong>FREE</strong> ice-cream!</p>
-			<p> Give our signature <strong>Grandslam burger</strong> or <strong>Dinger Dog</strong> a try today!</p>
+			<div class="text-center">
+				<p><h2 style="color: red;"> Restaurant Description: </h2></p>
+				<p> Grandslam's Burger Grill is <strong>guaranteed</strong> to hit a grandslam on your taste buds.</p>
+				<p> We serve 100% all beef hamburgers and hotdogs from local farms.</p>
+				<p> We buy our meat fresh from a local farm so you're always eating fresh never frozen ingredients.</p>
+				<p> Grandslam's has a <strong> HUGE</strong> bar area. Tons of tv's to watch your<br />
+					favorite sports teams taste victory!</p>
+				<p> Grandslam loves local leauges! Bring your kids in uniform to get<br />
+					a 100% <strong>FREE</strong> ice-cream!</p>
+				<p> Give our signature <strong>Grandslam burger</strong> or <strong>Dinger Dog</strong> a try today!</p>
+			</div>
 		</article>
 		</section>
-		
+
 		<footer>
 		<hr />
 			<p> Address: 300 Homerun way, Homeville, Ky. 12345 </p>
 			<p> Phone: (222)123-4321</p>
 		</footer>
-		
+
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		
+
 	</body>
 </html>

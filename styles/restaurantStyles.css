@@ -1,5 +1,5 @@
 
-header,footer{
+/* header,footer{
 				background-color: #1E405C;
 				color: #799DBB;
 				width: 100%;
@@ -7,27 +7,40 @@ header,footer{
 				text-align: center;
 				padding-top:30px;
 				padding-bottom: 30px;
+	} */
+
+	header,footer{
+		background-color: blue;
+		color: white;
+		width: 100%;
+
+		text-align: center;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		margin-top: 20px;
 	}
-	
+
 nav{
-	
+  background-color: red;
 	border-top: thin #5b7d87 solid;
 	border-bottom: thin #5b7d87 solid;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	text-align: center;
-	
-	
+
+
 }
 
 
 nav .btn{
-	background-color: #1E405C;
-	color: #799DBB;
-	
+	/* background-color: #1E405C;
+	color: #799DBB; */
+	background-color: blue;
+	color: white;
+
 }
 
 nav .btn:hover{
 	font-weight: bold;
-	
+
 }
